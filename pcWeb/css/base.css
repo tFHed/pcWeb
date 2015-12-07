@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+body,html {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: "微软雅黑";
+	color: #333;
+}
+
+.wrapper-960 {
+	max-width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+ul {
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+/*
+ *    页眉部分的样式
+ */
+ .header-bottom {
+ 	position: fixed;
+ 	top: 0;
+ 	width: 100%;
+ 	background-color: #fff;
+ 	color: #333;
+ 	border-bottom: 1px solid #7BAABE;
+ 	z-index: 100000;
+ }
+.headbottom-inner {
+	position: relative;
+	width: 960px;
+	height: 70px;
+	margin: 0 auto;
+	line-height: 70px;
+}
+.headbottom-inner img {
+	position: absolute;
+	bottom: 9px;
+	left: 0;
+	height: 55px;
+}
+.head-nav {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	list-style: none;
+}
+.head-nav li {
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+}
+.head-nav li a {
+	display: block;
+	height: 70px;
+	line-height: 73px;
+	padding: 0 20px;
+	font-size: 120%;
+	color: #333;
+	text-decoration: none;
+}
+.head-nav li a:hover {
+	color: #7BAABE;
+	border-bottom: 3px solid #7BAABE;
+}
+.nav-hover {
+	border-bottom: 3px solid #7BAABE;
+}
+
+/*
+*    button
+*/
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button {
+	overflow: visible;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 22px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+button.blue {
+	background-color: #7BAABE;
+	color: #fff;
+}
+button.blue:hover {
+	background: #71AEC7;
+}
+
+button.red {
+	background-color: #A33600;
+	color: #fff;
+}
+button.red:hover {
+	background: #CE5114;
+}
+
+button.white {
+	background-color: #fff;
+	color: #333;
+	font-family: "微软雅黑";
+	border: 1px solid #71AEC7;
+}
+button.white:hover ,
+button.white:active ,
+button.white:visited {
+	background: #71AEC7;
+	color: #fff;
+}

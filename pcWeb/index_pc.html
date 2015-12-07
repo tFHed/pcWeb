@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>海保</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" media="screen" />
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$.fn.fullpage({
+				slidesColor: ['#f7f7f7', '#fff', '#7BAABE', '#fff'],
+				anchors: ['page1', 'page2', 'page3', 'page4'],
+				scrollingSpeed: 500,
+				navigation: true,
+				loopTop: true,
+				loopBottom: true,
+				easing: 'linear',
+				afterLoad: function(anchorLink, index){
+          if(index == 1){
+            $('.head-nav a').eq(0).addClass("nav-hover");
+          }
+          if(index == 2){
+            $('.head-nav a').eq(1).addClass("nav-hover");
+          }
+          if(index == 3){
+            $('.head-nav a').eq(2).addClass("nav-hover");
+          }
+					if(index == 4){
+						$('.head-nav a').eq(4).addClass("nav-hover");
+					}
+				},
+				onLeave: function(index, direction){
+          if(index == '1'){
+            $('.head-nav a').eq(0).removeClass("nav-hover");
+          }
+          if(index == '2'){
+            $('.head-nav a').eq(1).removeClass("nav-hover");
+          }
+          if(index == '3'){
+            $('.head-nav a').eq(2).removeClass("nav-hover");
+          }
+					if(index == '4'){
+						$('.head-nav a').eq(4).removeClass("nav-hover");
+					}
+				}
+			});
+		});
+		</script>
+
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				slide($(".pic-area"),"209px",$(".phone-left"),$(".phone-right"));
+
+        // $(".section1 .head1").animate({
+        //   bottom: '65%'
+        // } ,2000 ,'easeOutExpo');
+        // setTimeout(function(){
+        //   $(".section1 .head2").animate({
+        //     bottom: '53%'
+        //   } ,2000 ,'easeOutExpo');
+        // } ,400);
+        $('.section1 .head-word').fadeIn(1200);
+        setTimeout(function(){
+          $(".section1 .download").fadeIn(1000);
+        } ,600);
+
+        // light
+        $('.section1 .light').fadeIn(2000);
+        setTimeout(function(){
+          $('.section1 .light').fadeOut(1500);
+        } ,2500);
+        setInterval(function(){
+          $('.section1 .light').fadeIn(2000);
+          setTimeout(function(){
+            $('.section1 .light').fadeOut(1500);
+          } ,2500);
+        } ,5000);
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- header -->
+		<div class="header-bottom">
+      <!-- logo and nav -->
+      <div class="headbottom-inner">
+        <a href="#"><img src="images/logo.png"></a>
+        <!-- 导航部分 -->
+        <ul class="head-nav">
+          <li><a href="#page1" class="nav-hover">首页</a></li>
+          <li><a href="#page2">功能介绍</a></li>
+          <li><a href="#page3">产品展示</a></li>
+          <li><a href="aboutUs.html">关于我们</a></li>
+          <li><a href="#page4">下载</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- section -->
+		<div class="section section1">
+      <!-- <img src="images/banner1.png" alt="主页图片" class="banner"> -->
+      <img src="images/head_word.png" class="head-word">
+      <img src="images/head_phonePC.png" class="head-phone">
+      <img src="images/light.png" class="light">
+      <a href="#page4"><img src="images/download.png" alt="立即下载" class="download"></a>
+		</div>
+
+		<div class="section section2">
+      <div class="wrapper-960">
+        <h1>一站式优质移动保险服务平台</h1>
+        <p>选择更简单，服务更超值</p>
+  			<div class="sec2-info">
+          <div class="sec2-icon sec2-icon1">
+            <span>车 险<br>比 价</span>
+          </div>
+  			</div>
+  			<div class="sec2-info">
+  				<div class="sec2-icon sec2-icon2">
+            <span>车 险<br>定 制</span>
+          </div>
+  			</div>
+  			<div class="sec2-info">
+  				<div class="sec2-icon sec2-icon3">
+            <span>车 险<br>购 买</span>
+          </div>
+  			</div>
+        <div class="sec2-info">
+          <div class="sec2-icon sec2-icon4">
+            <span>车 险<br>资 讯</span>
+          </div>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+		</div>
+
+		<div class="section section3">
+      <div class="wrapper-960">
+  			<div class="phone-wrapper">
+  				<img src="images/phone.png" class="phone-bg">
+  				<div class="phone-inner">
+  					<div class="pic-area">
+  						<img src="images/phone_pic/pic1.jpg" class="phone-pic">
+  						<img src="images/phone_pic/pic2.jpg" class="phone-pic">
+  						<img src="images/phone_pic/pic3.jpg" class="phone-pic">
+  					</div>
+  				</div>
+  				<i class="fa fa-angle-left phone-left"></i>
+  				<i class="fa fa-angle-right phone-right"></i>
+  			</div>
+  			<div class="info-wrapper">
+  				<div class="phone-info">
+  					<span>聚精准</span>
+  					<ul>
+              <li>TOP10保险公司精准报价</li>
+              <li>险种、价格快速对比、一键支付</li>
+            </ul>
+  				</div>
+  				<div class="phone-info">
+  					<span>聚优惠</span>
+            <ul>
+              <li>投保方案自由选择</li>
+              <li>车险价格优惠透明</li>
+            </ul>
+  				</div>
+  				<div class="phone-info">
+  					<span>聚方便</span>
+            <ul>
+              <li>三分钟轻松搞定保单</li>
+              <li>在线购买只需三步</li>
+              <li>不再为电话车险骚扰而苦恼</li>
+            </ul>
+  				</div>
+  			</div>
+        <div style="clear:both;"></div>
+      </div>
+		</div>
+
+		<div class="section section4">
+      <div class="wrapper-960">
+  			<div class="sec4-left">
+  				<div class="wchat-info">
+            <h5>快扫描二维码关注我们吧</h5>
+  					<img src="images/mark2.jpg" alt="微信公众号二维码">
+  				</div>
+  				<div class="download-info">
+  					<a href="#" class="sec4-icon1"><i class="fa fa-apple"></i> iOS下载</a>
+  					<a href="#" class="sec4-icon2"><i class="fa fa-android"></i> 安卓下载</a>
+            <div style="clear:both;"></div>
+  				</div>
+  			</div>
+      </div>
+      <b>Copyright©2015 版权归属 杭州大鱼网络科技有限公司 浙ICP备15038638号-1</b>
+		</div>
+	</body>
+</html>

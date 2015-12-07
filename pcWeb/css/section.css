@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+.section { 
+    text-align: center; 
+    font: 50px "Microsoft Yahei"; 
+    color: #fff;
+  }
+  .section1 img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .section1 p {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    z-index: 10;
+    color: #A33600;
+  }
+  .section1 span {
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    z-index: 10;
+  }
+  .section1 .mark {
+    position: absolute;
+    width: 150px;
+    top: 320px;
+    left: 100px;
+    z-index: 10;
+  }
+  .sec1-info {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    margin: 15px;
+    color: #333;
+  }
+  .sec1-info a {
+    color: #333;
+    text-decoration: none;
+  }
+  .sec1-info img {
+    width: 60px;
+    left: 30%;
+    top: 15%;
+  }
+  .sec1-info b {
+    position: relative;
+    bottom: 10px;
+    font-size: 50%;
+  }
+  .sec1-info-left {
+    left: 0;
+    border-right: 1px solid #ddd;
+  }
+  .sec1-info-right {
+    right: 0;
+  }
+  .section2 p { 
+    position: relative; 
+    bottom: -120%;
+    color: #A33600;
+  }
+  .sec2 {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    color: #333;
+    bottom: -120%;
+  }
+  .sec2-num {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 100%;
+    background-color: #999;
+    color: #fff;
+  }
+  .sec2-icon {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: #999;
+  }
+  .sec2-icon img {
+    width: 60%;
+    margin-top: 30px;
+  }
+  .sec2-txt h2 {
+    font-size: 60%;
+    margin-bottom: 0;
+  }
+  .sec2-txt span {
+    font-size: 40%;
+  }
+  .section3 img {
+    width: 180px;
+    margin-top: 40px;
+  }
+  .section3 p { 
+    position: relative; 
+    left: -120%;
+  }
+  .section3 button { 
+    position: relative; 
+    left: -120%;
+  }
+  .section3 span {
+    display: block;
+    font-size: 14px;
+  }
+  .section3 button {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .section4 p { 
+    display: none;
+  }

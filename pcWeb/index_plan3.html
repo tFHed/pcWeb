@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>聚保险</title>
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$.fn.fullpage({
+				slidesColor: ['#61C3F2', '#fff', '#7BAABE', '#fff'],
+				anchors: ['page1', 'page2', 'page3', 'page4'],
+				scrollingSpeed: 500,
+				navigation: true,
+				loopTop: true,
+				loopBottom: true,
+				easing: 'linear',
+				// css3: true,
+				afterLoad: function(anchorLink, index){
+					if(index == 4){
+						$('.section4').find('p').fadeIn(2000);
+					}
+				},
+				onLeave: function(index, direction){
+					if(index == '4'){
+						$('.section4').find('p').fadeOut(2000);
+					}
+				}
+			});
+		});
+		</script>
+
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				slide($(".pic-area"),"209px",$(".phone-left"),$(".phone-right"));
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- header -->
+		<div class="header-bottom">
+      <!-- logo and nav -->
+      <div class="headbottom-inner">
+        <a href="#"><img src="images/logo.jpg" alt="logo"></a>
+        <!-- 导航部分 -->
+        <ul class="head-nav pull-right">
+          <li><a href="#page1" class="nav-hover">主页</a></li>
+          <li><a href="#page2">功能介绍</a></li>
+          <li><a href="#page3">产品展示</a></li>
+          <li><a href="aboutUs.html">关于我们</a></li>
+          <li><a href="#page4">下载</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- section -->
+		<div class="section section1">
+			<img src="images/banner1.png" alt="主页图片">
+		</div>
+
+		<div class="section section2">
+			<div class="sec2-info sec2-info1">
+				<img src="images/sec2_icon/icon1.png" class="icon1">
+				<h5>Ju 精准</h5>
+				<p>聚保险提供TOP10保险公司精准报价，险种、价格快速对比、清晰明了</p>
+			</div>
+			<div class="sec2-info sec2-info2">
+				<img src="images/sec2_icon/icon2.png" class="icon1">
+				<h5>Ju 优惠</h5>
+				<p>投保方案自由选择，褪去促销活动的华丽外衣，车险价格优惠透明</p>
+			</div>
+			<div class="sec2-info sec2-info3">
+				<img src="images/sec2_icon/icon3.png" class="icon1">
+				<h5>Ju 方便</h5>
+				<p>十分钟轻松搞定保单，在线购买只需三步，不再为电话车险骚扰而苦恼</p>
+			</div>
+		</div>
+
+		<div class="section section3">
+			<div class="phone-wrapper">
+				<img src="images/phone.png" class="phone-bg">
+				<div class="phone-inner">
+					<div class="pic-area">
+						<img src="images/phone_pic/pic1.jpg" class="phone-pic">
+						<img src="images/phone_pic/pic2.jpg" class="phone-pic">
+						<img src="images/phone_pic/pic3.jpg" class="phone-pic">
+						<img src="images/phone_pic/pic4.jpg" class="phone-pic">
+					</div>
+				</div>
+				<i class="fa fa-angle-left phone-left"></i>
+				<i class="fa fa-angle-right phone-right"></i>
+			</div>
+			<div class="info-wrapper">
+				<div class="phone-info phone-info1">
+					<h5>描述性的标题1</h5>
+					<p>描述性的文字1</p>
+				</div>
+				<div class="phone-info phone-info2">
+					<h5>描述性的标题2</h5>
+					<p>描述性的文字2</p>
+				</div>
+				<div class="phone-info phone-info3">
+					<h5>描述性的标题3</h5>
+					<p>描述性的文字3</p>
+				</div>
+				<div class="phone-info phone-info4">
+					<h5>描述性的标题4</h5>
+					<p>描述性的文字4</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section4">
+			<div class="sec4-left">
+				<div class="wchat-info">
+					<img src="images/mark2.png" alt="微信公众号二维码">
+					<h5>扫描二维码<br>关注微信公众号</h5>
+				</div>
+				<div class="download-info">
+					<a href="#"><button type="button" class="white">iOS下载</button></a>
+					<a href="#"><button type="button" class="white">安卓下载</button></a>
+				</div>
+			</div>
+			<div class="sec4-right">
+				<h5>合作伙伴</h5>
+				<img src="images/company/company1.jpg" alt="太平洋保险">
+				<img src="images/company/company1.jpg" alt="太平洋保险">
+				<img src="images/company/company1.jpg" alt="太平洋保险">
+				<img src="images/company/company1.jpg" alt="太平洋保险">
+				<img src="images/company/company1.jpg" alt="太平洋保险">
+				<img src="images/company/company1.jpg" alt="太平洋保险">
+				<img src="images/company/company1.jpg" alt="太平洋保险">
+			</div>
+			<b>Copyright©2015 版权归属 大鱼科技有限公司 京ICP备xxxxxxx号</b>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>海保</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" media="screen" />
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				// $('.nav-icon').click(function() {
+				// 	$('.headbottom-inner ul').slideToggle(260);
+				// });
+
+				// // light
+    //     $('.section1 .light').fadeIn(2000);
+    //     setTimeout(function(){
+    //       $('.section1 .light').fadeOut(1500);
+    //     } ,2500);
+    //     setInterval(function(){
+    //       $('.section1 .light').fadeIn(2000);
+    //       setTimeout(function(){
+    //         $('.section1 .light').fadeOut(1500);
+    //       } ,2500);
+    //     } ,5000);
+				$('.download-icon').animate({
+					top: '35%'
+				} ,1000 ,'linear');
+				setTimeout(function() {
+					$('.download-icon').animate({
+						top: '30%'
+					} ,1000 ,'linear');
+				});
+				setInterval(function() {
+					$('.download-icon').animate({
+						top: '35%'
+					} ,1000 ,'linear');
+					setTimeout(function() {
+						$('.download-icon').animate({
+							top: '30%'
+						} ,1000 ,'linear');
+					});
+				} ,2000);
+			});
+		</script>
+	</head>
+
+	<body>
+    <!-- header -->
+<!-- 		<div class="header-bottom">
+      <div class="headbottom-inner"> -->
+        <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+<!-- 
+        <i class="fa fa-bars nav-icon"></i>
+        <ul>
+        	<li><a href="index.html">首页</a></li>
+        	<li><a href="aboutUs.html">关于我们</a></li>
+        </ul>
+      </div>
+    </div> -->
+
+    <!-- section1 -->
+    <div class="section section1">
+    	<!-- <img src="images/mobile/sec1_bg.png" class="sec1-bg"> -->
+    	<!-- <img src="images/light.png" class="light"> -->
+    	<img src="images/head_phone.png" class="head-phone">
+    	<!-- <img src="images/head_word.png" class="head-word"> -->
+    	<!-- <i class="fa fa-angle-double-down download-icon"></i> -->
+        <div class="download download-1">
+          <span><i class="fa fa-apple"></i> iOS下载</span>
+        </div>
+        <div class="download download-2">
+          <span><i class="fa fa-android"></i> 安卓下载</span>
+        </div>
+    </div>
+
+    <!-- section2 -->
+    <div class="section section2">
+    	<h1>一站式优质移动保险服务平台</h1>
+    	<h2>选择更简单，服务更超值</h2>
+    	<div class="sec2-part">
+	    	<img src="images/mobile/icon1.png">
+    	</div>
+    	<div class="sec2-part">
+	    	<img src="images/mobile/icon2.png">
+    	</div>
+    	<div class="sec2-part">
+	    	<img src="images/mobile/icon3.png">
+    	</div>
+    	<div class="sec2-part">
+	    	<img src="images/mobile/icon4.png">
+    	</div>
+    	<div style="clear:both"></div>
+    </div>
+
+    <!-- section3 -->
+    <div class="section section3">
+    	<div class="sec3-box">
+    		<div class="sec3-word sec3-word-1">
+    			<h1>聚精准</h1>
+    			<ul>
+    				<li>TOP10保险公司精准报价</li>
+    				<li>险种、价格快速对比、一键支付</li>
+    			</ul>
+    		</div>
+    		<img src="images/mobile/sec2-icon1.png" class="sec3-img sec3-img1">
+    	</div>
+
+    	<div class="sec3-box">
+    		<img src="images/mobile/sec2-icon2.png" class="sec3-img sec3-img2">
+    		<div class="sec3-word sec3-word-2">
+    			<h1>聚方便</h1>
+    			<ul>
+    				<li>三分钟轻松搞定保单</li>
+    				<li>在线购买只需三步</li>
+    				<li>不再为电话车险骚扰而苦恼</li>
+    			</ul>
+    		</div>
+    	</div>
+
+    	<div class="sec3-box">
+    		<div class="sec3-word sec3-word-3">
+    			<h1>聚优惠</h1>
+    			<ul>
+    				<li>投保方案自由选择</li>
+    				<li>车险价格优惠透明</li>
+    			</ul>
+    		</div>
+    		<img src="images/mobile/sec2-icon3.png" class="sec3-img sec3-img3">
+    	</div>
+    </div>
+
+    <!-- section4 -->
+    <div class="section section4">
+    	<h1>长按二维码加关注吧！</h1>
+    	<img src="images/mark2.jpg" alt="微信公众号">
+    </div>
+    <b>©2015 杭州大鱼网络科技有限公司</b>
+	</body>
+</html>

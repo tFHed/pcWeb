@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+.section { 
+	text-align: center; 
+}
+.section1 {
+	background: url(../images/banner1.png) no-repeat;
+	background-size:100% 95%;
+}
+.section3 {
+	background: url(../images/banner3.png) no-repeat;
+	background-size:100% 100%;
+}
+/*section1*/
+.section1 {
+	color: #fff;
+}
+.section1 .banner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.section1 .head-phone {
+	position: absolute;
+	width: 25%;
+	right: 22%;
+	bottom: -4%;
+}
+.section1 .light {
+	position: absolute;
+	display: none;
+	left: 40%;
+	top: -30%;
+	animation: 9.5s linear 0s normal none infinite rotate;
+	-webkit-animation:9.5s linear 0s normal none infinite rotate;
+
+}
+@keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@-webkit-keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes rotate{
+	from{-moz-transform:rotate(0deg)}
+	to{-moz-transform:rotate(360deg)}
+}
+@-ms-keyframes rotate{
+	from{-ms-transform:rotate(0deg)}
+	to{-ms-transform:rotate(360deg)}
+}
+@-o-keyframes rotate{
+	from{-o-transform:rotate(0deg)}
+	to{-o-transform:rotate(360deg)}
+}
+.section1 .download {
+	position: absolute;
+	width: 14%;
+	left: 18%;
+	bottom: 20%;
+	display: none;
+}
+.section1 .head-word {
+	position: absolute;
+	width: 23%;
+	left: 18%;
+	bottom: 40%;
+	display: none;
+}
+/*section2*/
+.section2 h1 {
+	font-size: 280%
+}
+.section2 p {
+	display: block;
+	margin: 25px 0 80px;
+	color: #999;
+	font-size: 210%;
+}
+.sec2-info {
+	position: relative;
+	width: 25%;
+	float: left;
+	bottom: 5%;
+}
+.sec2-icon {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 100%;
+	text-align: center;
+}
+.sec2-icon1 {
+	background-color: #3bbb9d;
+}
+.sec2-icon2 {
+	background-color: #26a9e1;
+}
+.sec2-icon3 {
+	background-color: #f8b551;
+}
+.sec2-icon4 {
+	background-color: #8879b8;
+}
+.sec2-icon span {
+	display: block;
+	position: relative;
+	top: 17%;
+	color: #fff;
+	font-size: 230%;
+	font-weight: bold;
+}
+
+/*section3*/
+.phone-wrapper {
+	position: relative;
+	top: 6%;
+	width: 35%;
+	float: left;
+	color: #fff;
+	font-size: 50px;
+	margin-top: 80px;
+}
+.phone-bg {
+	position: relative;
+	width: 240px;
+}
+.phone-inner {
+	position: absolute;
+	width: 209px;
+	height: 370px;
+	top: 50%;
+	left: 50%;
+	margin-top: -192px;
+	margin-left: -104px;
+	vertical-align: middle;
+	background: #eee;
+	overflow: hidden;
+}
+.phone-left {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	margin-left: -197px;
+	cursor: pointer;
+}
+.phone-right {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	margin-left: 180px;
+	cursor: pointer;
+}
+.pic-area {
+	min-width: 836px;
+	position: absolute;
+	left: 0;
+}
+.phone-pic {
+	width: 209px ;
+	display: block;
+	float: left;
+}
+
+.info-wrapper {
+	position: relative;
+	width: 60%;
+	float: left;
+}
+.phone-info {
+	display: none;
+	position: absolute;
+	left: 30%;
+	top: 190px;
+	color: #fff;
+	text-align: left;
+}
+.phone-info span {
+	font-size: 300%;
+}
+.phone-info ul {
+	display: block;
+	margin-top: 40px;
+}
+.phone-info li {
+	margin: 10px 0;
+	color: #fff;
+	font-size: 160%;
+
+}
+/*section4*/
+.section4 {
+	color: #333;
+}
+.sec4-left {
+	width: 100%;
+	padding: 10px 0 20px;
+}
+.wchat-info h5 {
+	margin: 10px 0 30px;
+	font-size: 200%;
+	color: #666;
+}
+.wchat-info img {
+	width: 200px;
+}
+.download-info {
+	position: relative;
+	margin-top: 80px;
+}
+.download-info a {
+	position: absolute;
+	display: block;
+	float: left;
+	overflow: visible;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 22px;
+	color: #333;
+	border-radius: 8px;
+	border: 1px solid #71AEC7;
+	text-decoration: none;
+}
+.sec4-icon1 {
+	left: 30%;
+}
+.sec4-icon2 {
+	right: 30%;
+}
+.download-info a:hover {
+	background: #71AEC7;
+	color: #fff;
+}
+.section4 b{
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 80%;
+	color: #999;
+}

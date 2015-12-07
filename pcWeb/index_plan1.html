@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>大鱼网络官网</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- 页面样式表 -->
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- 轮播切换 -->
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript">
+      $(function(){
+            $(document).ready(function () {              
+              $.ajax({                  
+                url: "https://api.weibo.com/2/statuses/friends_timeline.json?access_token=2.005CNGeCEuhfGDcf342933f4QekjbC",                
+                type: "GET",                
+                dataType: "jsonp",                
+                cache: false,                
+                success: function (getdata) {                    
+                  alert(getdata);                    
+                  alert(getdata.data);  
+                  var mes_obj = eval("(" + getdata.data + ")");                     
+                  var str_statuses;                    
+                  str_statuses = getdata.data[0];                    
+                  alert(str_statuses);                                       
+                }            
+              });        
+            });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- <div class="header-top"> -->
+      <!-- login and ad -->
+      <!-- <div class="headtop-inner">
+        <span>您好！欢迎来到大鱼网，请您<a href="#">登录</a>，或者<a href="#">注册</a></span>
+        <span class="pull-right app-show">大鱼手机客户端</span>
+      </div>
+    </div> -->
+    <div class="header-bottom">
+      <!-- logo and nav -->
+      <div class="headbottom-inner">
+        <a href="#"><img src="images/logo.png" alt="logo"></a>
+        <!-- 导航部分 -->
+        <ul class="head-nav pull-right">
+          <li><a href="#" class="nav-hover">主页</a></li>
+          <li><a href="#">公司简介</a></li>
+          <li><a href="#">人才招聘</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">产品介绍</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="width:100%;height:40px;"></div>
+
+    <!-- 轮播广告 -->
+    <div class="slider">
+      <ul class="slide-item">
+        <li class="sitem-1">
+          <div class="slide-word">
+              <h1>文本信息第一行内容</h1>
+              <p class="slide-txt">文本信息第二行内容</p>
+              <span>文本信息第三行内容</span>
+              <p><button type="button" class="btn btn-primary btn-lg">查看更多</button></p>
+          </div>
+        </li>
+      </ul>
+      <div class="control-icon">
+        <ul>
+          <li><a href="#" class="current"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+      <ul>
+        <li>
+          <img src="images/cont1.png" alt="功能1">
+          <h5>更多产品</h5>
+          <p>50多家保险公司提供的600多款产品</p>
+          <p>融合保险、救援、法律协助理赔服务于一体</p>
+        </li>
+        <li>
+          <img src="images/cont1.png" alt="功能1">
+          <h5>更多产品</h5>
+          <p>50多家保险公司提供的600多款产品</p>
+          <p>融合保险、救援、法律协助理赔服务于一体</p>
+        </li>
+        <li>
+          <img src="images/cont1.png" alt="功能1">
+          <h5>更多产品</h5>
+          <p>50多家保险公司提供的600多款产品</p>
+          <p>融合保险、救援、法律协助理赔服务于一体</p>
+        </li>
+      </ul>
+      <p><button type="button" class="btn btn-info btn-lg">了解更多</button></p>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-left pull-left">
+        <ul class="pull-left">
+          <h5>常见问题</h5>
+          <li>收费标准</li>
+          <li>收费标准</li>
+          <li>收费标准</li>
+          <li>收费标准</li>
+        </ul>
+        <ul class="pull-left">
+          <h5>常见问题</h5>
+          <li>收费标准</li>
+          <li>收费标准</li>
+          <li>收费标准</li>
+          <li>收费标准</li>
+        </ul>
+        <ul class="pull-left">
+          <h5>常见问题</h5>
+          <li>收费标准</li>
+          <li>收费标准</li>
+          <li>收费标准</li>
+          <li>收费标准</li>
+        </ul>
+      </div>
+      <div class="footer-right pull-right">
+        <img src="images/mark2.png" alt="微信二维码">
+        <span>大鱼推送</span><br>
+        <span>公众号订阅</span>
+      </div>
+      <p class="banquan">Copyright © 1998 - 2015 dayu. All Rights Reserved. 大鱼网络公司 版权所有</p>
+    </div>
+  </body>
+</html>
